@@ -1,12 +1,21 @@
+<img src="public/logo192.png" align="right" />
+
 # Play your cats right
+
+![](https://img.shields.io/badge/Cats-Rule-%2360A6A6?style=for-the-badge)
 
 ----
 
 A small fun app to see if you can guess the cat's score and if it's higher or lower than the previous cat.
 
+---
+
+<img src="app.png" height="400px" />
+
+
 ## Rules
 
-
+In this game you do get something for a pair! If the scores are the same it counts as a success and you can move on to the next cat.
 
 
 ## Setup
