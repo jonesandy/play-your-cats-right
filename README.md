@@ -1,5 +1,13 @@
 # Play your cats right
 
+----
+
+A small fun app to see if you can guess the cat's score and if it's higher or lower than the previous cat.
+
+## Rules
+
+
+
 
 ## Setup
 

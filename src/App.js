@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from './components/card';
+import Header from './components/header';
 import { fetchCats } from './services/apiCall';
 
 class App extends React.Component {
@@ -18,13 +19,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="cards">
-        {this.state.cats.map((element) => {
-        return (
-          <Card cat={ element } />
-        )
-        })} 
-      </div>
+      <div>
+        <Header />
+        <div className="cards">
+          {this.state.cats.map((element) => {
+          return (
+            <Card cat={ element } />
+          )
+          })} 
+        </div>
+      </div>  
     )
   }
 }
