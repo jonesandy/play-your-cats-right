@@ -18,7 +18,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="cards">
         {this.state.cats.map((element) => {
         return (
           <Card cat={element} />
