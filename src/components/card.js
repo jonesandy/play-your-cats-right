@@ -7,9 +7,12 @@ const Contacts = ({ cat }) => {
       <Image src={cat.url} wrapped ui={false} />
       <Card.Content>
         <Card.Header>{cat.breeds[0].name}</Card.Header>
+        <Card.Description>
+          {cat.breeds[0].description}
+        </Card.Description>
       </Card.Content>
-      <Card.Content extra>
-        <p>This cat has a rating of X</p>
+      <Card.Content>
+        <p>This cat has a score of {cat.breeds[0].energy_level + cat.breeds[0].affection_level + cat.breeds[0].stranger_friendly}</p>
       </Card.Content>
     </Card>
   )
