@@ -21,7 +21,7 @@ class App extends React.Component {
       <div className="cards">
         {this.state.cats.map((element) => {
         return (
-          <Card cat={element} />
+          <Card cat={ element } />
         )
         })} 
       </div>
