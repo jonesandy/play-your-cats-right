@@ -1,8 +1,11 @@
 import React from 'react';
+import './header.css';
 
 const Header =  () => {
   return (
-    <center><h1>Play Your Cats Right</h1></center>
+    <header>  
+      <h1>Play Your Cats Right</h1>
+    </header>
   )
 };
 
