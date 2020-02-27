@@ -5,6 +5,6 @@
   align-items: flex-end;
 }
 
-.ui.card, .ui.card:last-child {
+.ui.card, .ui.card:last-child, .ui.card:first-child {
   margin: 10px;
 }
