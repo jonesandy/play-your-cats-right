@@ -13,8 +13,8 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    const data = await fetchCats()
-    this.setState({cats: data})
+    const data = await fetchCats();
+    this.setState({cats: data});
   }
 
   render() {
@@ -22,9 +22,10 @@ class App extends React.Component {
       <div>
         <Header />
         <div className="cards">
-          {this.state.cats.map((element) => {
+          {this.state.cats.map((cat) => {
+            
           return (
-            <Card cat={ element } />
+            <Card cat={ cat } />
           )
           })} 
         </div>

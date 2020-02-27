@@ -10,4 +10,4 @@ export const fetchCats = async () => {
   } else {
     return await response.json()
   }
-};  
+}; 

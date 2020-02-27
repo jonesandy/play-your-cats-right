@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
+import { computeScore } from '../utils/computeScore';
 
 const Contacts = ({ cat }) => {
   return (
@@ -12,7 +13,7 @@ const Contacts = ({ cat }) => {
         </Card.Description>
       </Card.Content>
       <Card.Content>
-        <p>This cat has a score of {cat.breeds[0].energy_level + cat.breeds[0].affection_level + cat.breeds[0].stranger_friendly}</p>
+        <p>This cat has a score of {computeScore(cat)}</p>
       </Card.Content>
     </Card>
   )
