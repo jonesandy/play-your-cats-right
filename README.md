@@ -10,7 +10,7 @@ A small fun app to see if you can guess the cat's score and if it's higher or lo
 
 ---
 
-<img src="app.png" height="400px" />
+<img src="app.png" />
 
 
 ## Rules
