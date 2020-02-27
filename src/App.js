@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-const API_KEY = process.env.CAT_API_KEY;
+import { fetchCats } from './services/apiCall';
 
 class App extends React.Component {
   constructor(props) {
@@ -10,9 +10,14 @@ class App extends React.Component {
     }
   }
 
+  async componentDidMount() {
+    const data = await fetchCats()
+    this.setState({cats: data})
+  }
+
   render() {
     return (
-      <h1>Hello World</h1>
+      <h1>Play Your Cats Right</h1>
     )
   }
 }
