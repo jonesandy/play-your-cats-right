@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image } from 'semantic-ui-react';
+import { Card, Image, Button } from 'semantic-ui-react';
 import { computeScore } from '../utils/computeScore';
 
 const Contacts = ({ cat }) => {
@@ -15,6 +15,7 @@ const Contacts = ({ cat }) => {
       <Card.Content>
         <p>This cat has a score of {computeScore(cat)}</p>
       </Card.Content>
+      <Button color='teal'>Show Score!</Button>
     </Card>
   )
 };
