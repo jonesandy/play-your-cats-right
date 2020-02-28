@@ -10,6 +10,8 @@
 
 A small fun app to see if you can guess the cat's score and if the next cat is higher or lower than the previous cat.
 
+[Click to play](https://play-your-cats-right.herokuapp.com/)
+
 ---
 
 <img src="app.png" />
