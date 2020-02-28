@@ -2,11 +2,13 @@
 
 # Play your cats right
 
-![](https://img.shields.io/badge/Cats-Rule-%2360A6A6?style=for-the-badge)
+[![Build Status](https://travis-ci.com/jonesandy/play-your-cats-right.svg?branch=master)](https://travis-ci.com/jonesandy/play-your-cats-right)
+![](https://img.shields.io/badge/Cats-Rule-%2360A6A6)
+
 
 ----
 
-A small fun app to see if you can guess the cat's score and if it's higher or lower than the previous cat.
+A small fun app to see if you can guess the cat's score and if the next cat is higher or lower than the previous cat.
 
 ---
 
@@ -15,7 +17,17 @@ A small fun app to see if you can guess the cat's score and if it's higher or lo
 
 ## Rules
 
+Cats have each been given a score based around information coming back from the API. The score has been calculated: 
+
+```
+score = energy_level + affection_level + stranger_friendly
+```
+
+The aim of the game is to see if you can look at the picture, read the description and see if you can guess whether this cat's score is <b>HIGHER</b> or <b>LOWER</b> that the previous one. When you are ready, click the button to reveal the score.
+
 In this game you do get something for a pair! If the scores are the same it counts as a success and you can move on to the next cat.
+
+<em>N.B this app is currently a work-in-progress. No automation or score logic has been implemented yet. It's up to you to guess and click. No cheating!</em>
 
 
 ## Setup
@@ -41,3 +53,11 @@ npm start
 ```
 
 The server will start and open the application in your web browser.
+
+### Tests
+
+To run tests, in the root folder run command:
+
+```bash
+npm test
+```
